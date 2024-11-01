@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SWIPERJS CSS FILE -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.css">
+
+     <!-- AOS CSS FILE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- BOXICONS CSS FILE -->
+    <link rel="stylesheet" href="/assets/lib/boxicons-2.1.4/css/boxicons.min.css">
+
+     <!--  CSS FILE -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <title>TEST MAIN</title>
+</head>
+
+ <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 6px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 7px;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: #000000b0;
+            border-radius: 6px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #F87516;
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                <img src="assets/images/logo-blue.jpg" alt="">
+            </div>
+
+            <div class="menu" data-aos="fade-left" data-aos-duration="1500">
+
+                <i class='bx bx-menu-alt-right' id="menu"></i>
+            </div>
+
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                       
+                    </ul>
+                </nav>
+
+                </div>
+                
+                <div  id="nav-overlay">
+                    <i class='bx bx-x' id="closeicon"></i>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+       <!-- HERO SECTION -->
+       <section class="hero">
+        <hero class="container">
+            <div class="shadow"></div>
+            <div class="img"></div>
+            <div class="txt" data-aos="fade-up">
+                <h2>A Limitless </h2>
+                <h2> <span style="color: #0404b4;">Experience</span>  with  </h2>
+                <h2>Umarks Tecnologies<span style="color: #020181;">.</span></h2>
+              <p>Building a unique partnership with your business through our innovative Technologies</p>
+            </div>
+
+            <div class="txt-mobile" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h2>A Limitless </h2>
+                <h2> <span style="color: #0404b4;">Experience</span> </h2>
+                <h2>  With Umarks Tecnologies<span style="color: #020181;">.</span></h2>
+              <p>Building a unique partnership with your  <br>business through our innovative Technologies</p>
+            </div>
+       
+        </hero>
+        
+       
+    </section>
+
+     <!-- EXPERTISE SECTION -->
+     <section class="hero2">
+        <div class="container">
+            <div class="txt11" data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="2500" >Our Expertise and Experience</div>
+            <div class="row">
+                <div class="row1" >
+                    <div class="img"><div class="shadow"></div></div>
+
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Development</h4>
+                        </div>
+
+                        <div class="txt2">
+                            <p>Harness the power of the sun 
+                                 and embrace clean, renewable 
+                                 energy with our solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row1"  data-aos="fade-in"
+                  data-aos-duration="1000">
+                    <div class="img img2"> <div class="shadow"></div></div>
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Security</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>Stay connected with high 
+                            quality cable services that 
+                           deliver reliable and fast
+                            internet connection</p>
+                        </div>
+                    </div>
+               
+                </div>
+                <div class="row1"  data-aos="fade-in"
+              data-aos-duration="1000">
+                    <div class="img img3">
+                        <div class="shadow"></div>
+                    </div>
+
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Innovation</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>From fast broadband to fiber  optic connections we'll help 
+                             you find thhe internet service provider </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row1"   data-aos="fade-in"
+                data-aos-duration="1000">
+                    <div class="img img4">
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Finance</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>Discover cost effective and 
+                                 feature rich phone servicesthat keep you connected to 
+                                 your loved ones</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero2a">
+        <div class="container">
+            <div class="txt11" data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="2500" >Our Expertise and Experience</div>
+            </div>
+        </section>
+        
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="row1" >
+                <div class="img"><div class="shadow"></div></div>
+
+                <div class="txt">
+                    <div class="txt1">
+                        <h4>Development</h4>
+                    </div>
+
+                    <div class="txt2">
+                        <p>Harness the power of the sun 
+                             and embrace clean, renewable 
+                             energy with our solutions.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row1"  >
+                    <div class="img img2"> <div class="shadow"></div></div>
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Security</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>Stay connected with high 
+                            quality cable services that 
+                           deliver reliable and fast
+                            internet connection</p>
+                        </div>
+                    </div>
+               
+                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row1">
+                    <div class="img img3">
+                        <div class="shadow"></div>
+                    </div>
+
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Innovation</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>From fast broadband to fiber  optic connections we'll help 
+                             you find thhe internet service provider </p>
+                        </div>
+                    </div>
+                    
+                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row1">
+                    <div class="img img4">
+                        <div class="shadow"></div>
+                    </div>
+                    <div class="txt">
+                        <div class="txt1">
+                            <h4>Finance</h4>
+                        </div>
+                        <div class="txt2">
+                            <p>Discover cost effective and 
+                                 feature rich phone servicesthat keep you connected to 
+                                 your loved ones</p>
+                        </div>
+                    </div>
+                    
+                </div>
+          </div>
+        
+         </div>
+         <!-- <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination pg"></div>
+      </div>
+
+      <!-- WHY CHOOSE US SECTION -->
+      <section class="hero3">
+        <div class="container">
+            <div class="c11 c1 "
+            data-aos="fade-in" data-aos-duration="1000"
+            style="background-color: none; padding: 20px 0px 0px 18px;" >
+                <div class="h1 m1">
+                    <h1 >Why choose  Us?</h1>
+                </div>
+                <div class="p"><p>Wheather you're looking to switch to <br>
+                    solar energy or upgrade your cable 
+                    services, our sales and marketing 
+                    company is here to help.</p>
+                    </div>
+            </div>
+            <div class="c1"  data-aos="fade-in" data-aos-duration="1000" >
+                <div class="h11">
+                    <h1>01</h1>
+                </div>
+                <div class="txt"><h1>Expertise and Experience</h1></div>
+                <div class="p"><p>
+                    With years of experience in the sales 
+                                and marketing industry our team 
+                                has a deep.
+                </p>
+                    </div>
+            </div>
+            <div class="c1" style="background-color: #020181;"  data-aos="fade-in" data-aos-duration="1000">
+                <div class="h11">
+                    <h1 style="color: white;">02</h1>
+                </div>
+                <div class="txt"><h1 style="color: white;">Extensive Network</h1></div>
+                <div class="p"><p style="color: white;">
+                    We have estblished strong 
+                     relationships with the leading solar 
+                      and cable companies in the region
+                </p>
+                    </div>
+            </div>
+            <div class="c1"  data-aos="fade-in" data-aos-duration="1000"> 
+                <div class="h11">
+                    <h1>03</h1>
+                </div>
+                <div class="txt"><h1>Personalized Approach</h1></div>
+                <div class="p"><p>
+                    We believe that every customer is
+                        unique, and thier needs should 
+                        addressed accordingly. 
+                </p>  
+                    </div>
+            </div>
+            <div class="c1"  data-aos="fade-in" data-aos-duration="1000">
+                <div class="h11">
+                    <h1>04</h1>
+                </div>
+                <div class="txt"><h1>Cost Savings</h1></div>
+                <div class="p"><p>
+                    By leveraging our industry knowledge 
+                            and Network, we can help you save 
+                            money on your solar and cable 
+                            purchases
+                </p>
+                    </div>
+            </div>
+            <div class="c1"  data-aos="fade-in" data-aos-duration="1000">
+                <div class="h11">
+                    <h1>05</h1>
+                </div>
+
+                <div class="txt"><h1>Hassle-Free Process</h1></div>
+                
+                <div class="p"><p>We handle all te research, 
+                    negotiations, and paperwork for you 
+                    making the process of finding</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- ABOUT SECTION-->
+         <section class="hero4">
+            <div class="container">
+                <div class="div1 "  data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1000"
+                data-aos-offset="0"> 
+                    <h2>Who we Are</h2>
+                    <p>welcome to your sales and marketing company, where we 
+                    specialize in helping customers snag great deals form the 
+                        leadin solar and cable companies in te DC, Maryland, 
+                            and  Virinia area. We understand tat finding the right 
+                            solar and cable solutions for your needs can be a dauntin 
+                                task, wic is why we are ere to make the process easier
+                            and more affordable for you.</p>
+    
+    
+                            <div class="btns">
+                                <button class="btn1">Read More</button>
+                                <button class="btn2">Contact us today</button>
+                            </div>
+                </div>
+                <div class="div2">
+                    <div class="img1">
+    
+                    </div>
+                    <div class="img2"></div>
+                </div>
+            </div>
+        </section>
+
+         <!-- SERVICE SECTION / WHAT WE DO-->
+    <section class="hero5">
+        <div class="container">
+            <div class="head" data-aos="fade-in"
+            data-aos-easing="linear"
+            data-aos-duration="1500" >
+               <h1>What We Do</h1>
+            </div>
+
+            <div class="main">
+                <div class="div1 div" >
+
+                    <div class="child1" data-aos="fade-right"
+                           data-aos-duration="1000"> 
+                         <div class="icon">
+                            <i class='bx bx-code-alt'></i>
+                           <h2>Web Development</h2>
+                         </div>
+                        <p>Harness the powerof the sun and 
+                        embrace clean, renewable energy 
+                    with our solar solutions</p>
+                    </div>
+
+
+                    <div class="child1 div"  data-aos="fade-in" data-aos-duration="1000">
+                       <div class="icon">
+                        <i class='bx bx-laptop'></i>
+                        <h2>Software & Tailored System Development</h2>
+                       </div>
+                        <p>Stay connected with high quality cable 
+                        services that deliver reliable and fast 
+                    internet.</p>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="child1"></div>
+                </div>
+                <div class="div3 div">
+                    <div class="child1"  data-aos="fade-right" data-aos-duration="1000">
+                        <div class="icon">
+                            <i class='bx bx-devices'></i>
+                        <h2>Mobile App Development</h2>
+                        </div>
+                        <p>We pride ourselves on securing 
+                        great deals and promotions for our 
+                    customers.   solar and  be 
+                    overwhelming.</p>
+                    </div>
+                    <div class="child1"  data-aos="fade-in" data-aos-duration="1000" >
+                        <div class="icon">
+                            <i class='bx bxs-business'></i>
+                        <h2>Business Branding & Product Design</h2>
+                        </div>
+                        <p>We understand that navigating the 
+                        solar and cable landscape can be 
+                    overwhelming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- SERVICE SECTION / WHAT WE DO-->
+    <section class="services">
+        <div class="container">
+            <div class="left-container">
+                <h3>Build With Umarks</h3>
+                <p>We have all the necessary structure 
+                    and resources to build and deploy 
+                    quality and innovative products to 
+                    clients. As a brand we help you bring your
+                     ideas to reality by leveraging the power of technology.
+                </p>
+                <button>BUILD WITH US</button>
+            </div>
+            <div class="right-container">
+                <div class="d1">
+                    <div class="logo">
+                        <img src="/assets/images/strond.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Strong Team</h2>
+                        <p>We’ve got a strong team of developers</p>
+                    </div>
+                </div>
+
+                <div class="d2">
+                    <div class="logo">
+                        <img src="/assets/images/efficient.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Efficient Technologies</h2>
+                        <p>We use the best and latest technologies to build for you</p>
+                    </div>
+                </div>
+
+                <div class="d3">
+                    <div class="logo">
+                        <img src="/assets/images/time.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Timely Delivery</h2>
+                        <p>We set and beat timelines for every stage of development</p>
+                    </div>
+                </div>
+
+                <div class="d4">
+                    <div class="logo">
+                        <img src="/assets/images/effec.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Effective Communication</h2>
+                        <p>We communicate with every client consistently and clearly,
+                             throughout every stage of development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+      <!-- SWIPER JS FILE -->
+      <script src="/assets/js/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="/assets/js/script.js"></script>
+</body>
+</html>

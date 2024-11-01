@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* FONTS */
+/*
+font-family: "Oswald", sans-serif;
+ font-family: "Roboto Condensed", sans-serif;
+   font-family: "Barlow Condensed", sans-serif;
+
+
+git add .
+git commit -m 'c'
+git push
+
+*/
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* overflow-y: hidden;  */
+    scroll-behavior: smooth;
+    
+  }
+  header{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #010180;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    
+  }
+  header .head{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    color: white;
+  }
+  header .head .logo img{
+    width: 70%;
+  }
+  header .head .logo{
+    display: flex;
+    align-items: center; 
+    width: 30%;
+  }
+  header .head .menu .bx{
+   display: none;
+ 
+  }
+  header .head .nav nav ul{
+    display: flex;
+    list-style-type: none;
+  }
+  header .head .nav nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-family: "Barlow Condensed", sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
+    padding: 0px 19px;
+    font-weight: medium;
+    font-size: 17px;
+  }
+  header .head  #nav-overlay{
+   display: none;
+  }
+  
+ 
+  .hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    top: 0px;
+    padding-top: 100px;
+    background-color: #FFFF;
+    z-index: 3;
+    /* overflow-x: hidden; */
+ }
+ .hero .container{
+    width: 95%;
+    position: relative;
+ }
+ .hero .container .img{
+    background-image: url(../images/hero1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+ }
+ .hero .container .shadow{
+    background: linear-gradient(to right, black 1%, transparent 150%);
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    border-radius: 10px;
+ }
+ .hero .container .txt{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    color: white;
+ }
+ .hero .container .txt h2{
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: "Roboto Condensed", sans-serif; */
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 60px;
+    line-height: 59px;
+ }
+ .hero .container .txt p {
+   padding-top: 10px;
+   /* font-family: "Poppins", ans-serif; */
+   font-family: "Roboto Condensed", sans-serif;
+   /* font-family: "Barlow Condensed", sans-serif; */
+   font-size: 15px;
+   font-style: italic;
+}
+
+.hero .container .txt-mobile{
+   position: absolute;
+    top: 130px;
+    left: 50px;
+    color: white;
+    display: none;
+ }
+ .hero .container .txt-mobile h2{
+   font-family: "Poppins", sans-serif;
+   font-size: 55px;
+   line-height: 59px;
+}
+.hero .container .txt-mobile p {
+  padding-top: 10px;
+  /* font-family: "Poppins", ans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+.hero2{
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 40px;
+   margin-bottom: 0px;
+   position: relative;
+   top: 0px;
+   background-color: white;
+   z-index: 1;
+   display: block;
+   /* overflow-x: hidden; */
+   /* background-image: linear-gradient(#F3F7FB, white); */
+}
+.hero2 .container{
+   /* background-color: red; */
+   width: 83%;
+   margin: auto;
+}
+.hero2 .container .txt11{
+  font-size: 45px;
+  font-weight: bold;
+   font-family: "Poppins", sans-serif;
+  color: #020181;
+   text-align: center;
+}
+.hero2 .container .row{
+   /* background-color: blue; */
+   width: 100%;
+   display: flex;
+   gap: 2%;
+   flex-wrap: wrap;
+   /* height: 100px; */
+}
+.hero2 .container .row .row1{
+   /* height: 350px; */
+   width: 23%;
+   margin-top: 25px;
+   border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero2 .container .row .row1 .txt{
+     /* background-color: red; */
+     position: absolute;
+     top: 0;
+     padding: 10px 0px;
+     width: 90%;
+}
+.hero2 .container .row .row1 .txt .txt1 h4{
+   color: white;
+   font-size: 19px;
+   line-height: 25px;
+   font-family: "Poppins", sans-serif;
+}
+.hero2 .container .row .row1 .txt .txt1{
+   padding-bottom: 10px;
+}
+.hero2 .container .row .row1 .txt .txt2 p{
+   color: white;
+   font-size: 12px;
+   line-height: 15px;
+   font-family: "Poppins", sans-serif;
+   font-weight: normal;
+}
+.hero2 .container .row .row1 .img{
+   border-radius: 9px;
+   background-image: url(../images/business-dev.png);
+   width: 100%;
+   height: 340px;
+   background-position: top center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.hero2 .container .row .row1 .img2{
+   border-radius: 9px;
+   background-image: url(../images/security.webp);
+   width: 100%;
+   height: 340px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.hero2 .container .row .row1 .img3{
+   border-radius: 9px;
+   background-image: url(../images/innovation.jpg);
+   width: 100%;
+   height: 340px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.hero2 .container .row .row1 .img4{
+   border-radius: 9px;
+   background-image: url(../images/finance.webp);
+   width: 100%;
+   height: 340px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.hero2 .container .row .row1 .shadow {
+   width: 100%;
+   height: 340px;
+   border-radius: 9px;
+  background-image: linear-gradient(to bottom, rgb(11, 11, 11) 0%, rgba(16, 16, 16, 0.459),transparent, transparent)
+}
+
+
+.hero2a{
+   width: 100%;
+   margin-bottom: 3px;
+   position: relative;
+   top: 80px;
+   background-color: white;
+   z-index: 3;
+   display: none;
+   /* overflow-x: hidden; */
+   /* background-image: linear-gradient(#F3F7FB, white); */
+}
+
+.hero2a .container{
+   /* background-color: red; */
+   width: 83%;
+   margin: auto;
+}
+.hero2a .container .txt11{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #020181;
+   text-align: center;
+   line-height: 30px;
+}
+.swiper {
+   width: 90%;
+   display: none;
+   margin-bottom: 0px;
+   position: relative;
+   top: 60px;
+   z-index: 1;
+   margin-bottom: 70px;
+ }
+
+ .swiper-slide {
+   font-size: 18px;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+.swiper .swiper-wrapper .swiper-slide .row1{
+   height: 400px;
+   width: 100%;
+   margin-top: 25px;
+   border-radius: 13px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .txt{
+     /* background-color: red; */
+     position: absolute;
+     top: 0;
+     padding: 20px 0px;
+     width: 90%;
+}
+.swiper  .pg{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: center;
+   position: relative;
+   bottom: 0px;
+   height: 35px;
+   /* background-color: red; */
+
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .txt .txt1 h4{
+   color: white;
+   font-size: 28px;
+   line-height: 45px;
+   font-family: "Roboto Condensed", sans-serif;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .row1 .txt .txt1{
+   padding-bottom: 10px;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .txt .txt2 p{
+   color: white;
+   font-size: 20px;
+   line-height: 23px;
+   letter-spacing: normal;
+   font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .img{
+   border-radius: 13px;
+   background-image: url(../images/business-dev.png);
+   width: 100%;
+   height: 400px;
+   background-position: top center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .img2{
+   border-radius: 13px;
+   background-image: url(../images/security.webp);
+   width: 100%;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .img3{
+   border-radius: 13px;
+   background-image: url(../images/innovation.jpg);
+   width: 100%;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .img4{
+   border-radius: 13px;
+   background-image: url(../images/finance.webp);
+   width: 100%;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.swiper .swiper-wrapper .swiper-slide .row1 .shadow {
+   width: 100%;
+   height: 400px;
+   border-radius: 13px;
+  background-image: linear-gradient(to bottom, rgb(11, 11, 11) 0%, rgba(16, 16, 16, 0.459),transparent, transparent)
+}
+.hero3{
+   /* height: 100vh; */
+   width: 100%;
+   background-color: #FFFF;
+   /* background-image: linear-gradient(#F3F7FB, white); */
+   margin-top: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hero3 .container{
+   width: 85%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2%;
+   padding: 20px 0px;
+}
+.hero3 .container .c1{
+   width: 32%;
+   height: 280px;
+   background-color: white;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   padding: 20px 0px 0px 35px;
+   box-shadow: 0px 5px 8px rgba(17, 16, 16, 0.1);
+}
+
+.hero3 .container .c1 .h11 h1{
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #020181;
+}
+.hero3 .container .c1 .m1 h1{
+  line-height: 53px;
+   font-size: 47px; 
+   color: #F87516;
+}
+.hero3 .container .c1 .p p{
+  color: black;
+   font-size: 16px;
+}
+.hero3 .container .c1 .txt h1{
+   font-size: 23px;
+   font-family: "Poppins", sans-serif;
+   padding: 3px 0px;
+   color: #5C5C5C;
+   font-weight: bolder;
+}
+.hero3 .container .c1 .p p{
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   line-height: 20px;
+   font-weight: 400;
+   color: #787878;
+}
+
+.hero4{
+   background-color: #010180;;
+   /* margin-bottom: 40px; */
+   /* height: 70vh; */
+   /* padding-top: 65px; */
+ }
+ .hero4 .container{
+   margin: auto;
+   width: 85%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding-bottom: 45px;
+   padding-top: 45px;
+   gap: 4%;
+ }
+ .hero4 .container .div1{
+   width: 45%;
+   /* padding-top: 80px; */
+ }
+ .hero4 .container .div1 h2{
+   color: #ffffff;
+   font-size: 60px;
+   font-family: "Poppins", sans-serif;
+ }
+ .hero4 .container .div1 p{
+   color: white;
+   font-size: 18px;
+   line-height: 27px;
+   font-family: "Poppins", sans-serif;
+   padding-bottom: 30px;
+   font-weight: 300;
+   text-align: justify;
+ }
+ .hero4 .container .div1 .btns{
+   width: 95%;
+   display: flex;
+   justify-content: space-between;
+ }
+ .hero4 .container .div1 .btns .btn1{
+   padding: 10px 25px;
+   background-color: white;
+   border: none;
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   border-radius: 25px;
+ }
+ .hero4 .container .div1 .btns .btn2{
+   padding: 10px 25px;
+   background-color: black;
+   color: white;
+   border: none;
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+   border-radius: 25px;
+ }
+ .hero4 .container .div2{
+  width: 50%;
+  display: flex;
+  position: relative;;
+  /* padding-top: 45px;
+  padding-left: 80px; */
+
+ }
+ .hero4 .container .div2 .img1{
+   background-image: url(../images/first-about.jpg);
+   border-radius: 15px;
+   width: 50%;
+   height: 450px;
+   background-size: cover;
+   background-position: right center;
+   background-repeat: no-repeat;
+   object-fit: contain;
+   position: relative;
+ }
+ .hero4 .container .div2 .img2{
+   background-image: url(../images/second-about.jpg);
+   width: 50%;
+   height: 300px;
+   background-size: cover;
+   background-position: top ;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 70px;
+   right: 60px;
+
+   border-radius: 10px;
+ }
+ 
+.hero5{
+   width: 100%;
+   /* margin-bottom: 40px; */
+   background-image: linear-gradient(#ececec, #F2F6FA);
+   display: none;
+}
+.hero5 .container{
+   width: 90%;
+   margin: auto;
+   padding-top: 30px;
+}
+.hero5 .container .head{
+   text-align: center;
+   padding-bottom: 15px;
+}
+.hero5 .container .head h3{
+
+   font-family: "Poppins", sans-serif;
+   font-size: 22px;
+   padding-bottom: 3px;
+   font-weight: 500;
+}
+.hero5 .container .head h1{
+   font-size: 55px;
+   font-family: "Poppins", sans-serif;
+   color: #010180;
+}
+.hero5 .container .main{
+   width: 100%;
+   display: flex;
+   gap: 2%;
+}
+.hero5 .container .main .div1{
+   width: 32%;
+}
+.hero5 .container .main .div1 .child1{
+   background-color: white;
+   width: 100%;
+   margin-bottom: 25px;
+}
+.hero5 .container .main .div .child1 .con{
+   display: flex;
+   width: 100%;
+   gap: 3%;
+   margin-bottom: 5px;
+}
+.hero5 .container .main .div2{
+   background-image: url(../images/what-we-do.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 32%;
+   height: 430px;
+   margin-top: 20px;
+   border-radius: 15px;
+}
+.hero5 .container .main .div3{
+   width: 32%;
+}
+.hero5 .container .main .div3 .child1{
+   background-color: white;
+    width: 100%;
+   margin-bottom: 30px;
+   justify-content: center;
+}
+.hero5 .container .main .div .child1{
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   gap: 3%;
+   height: 200px;
+   padding: 20px;
+}
+.hero5 .container .main .div .child1 h2{
+   padding: 5px 0px;
+   font-size: 18px;
+   color: #010180;
+   width: 90%;
+}
+
+.hero5 .container .main .div .child1 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero5 .container .main .div .child1 .icon .bx{
+   font-size: 35px;
+   padding-right:5px;
+   color: #010180;
+}
+.hero5 .container .main .div .child1 p{
+   font-size: 16px;
+   color: #787878;
+}
+
+
+
+/* SERVICES PAGE DESGIN */
+.services{
+   width: 100%;
+   /* height: 100vh; */
+   /* background-color: red; */
+   position: relative;
+   top: 110px;
+   padding-bottom: 40px;
+   
+}
+.services .container{
+   width: 95%;
+   /* height: 100vh; */
+   /* background-color: rebeccapurple; */
+   margin: auto;
+   display: flex;
+   gap: 5%;
+}
+.services .container .left-container{
+   /* background-color: green; */
+   width: 55%;
+   margin-top: 20px;
+}
+.services .container .right-container{
+   width: 60%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10%;
+}
+.services .container .left-container h3{
+   color: rgb(47, 50, 125);
+   font-size: 30px;
+   padding-bottom: 20px;
+   font-family: 'Poppins', sans-serif;
+}
+.services .container .left-container p{
+   color: rgb(105, 105, 132);
+   font-size: 12px;
+   padding-bottom: 40px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.services .container .left-container button{
+   color: rgb(47, 50, 125);
+   background-color: transparent;
+   margin-bottom: 30px;
+   border: 1px solid rgb(47, 50, 125);
+   padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.services .container .right-container .d1{
+  width: 45%;
+  margin-bottom: 40px;
+}
+.services .container .right-container .d1 .logo{
+   background-color: #23BDEE;
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left: 5px;
+}
+
+.services .container .right-container .d1 .logo img{
+   width: 50%;
+}
+.services .container .right-container .d1 .txt{
+padding-top: 10px;
+ font-family: "Roboto Condensed", sans-serif;
+ color: #36327D;
+}
+.services .container .right-container .d1 .txt h2{
+   font-size: 19px;
+   padding-bottom: 20px;
+}
+.services .container .right-container .d1 .txt p,
+.services .container .right-container .d2 .txt p,
+.services .container .right-container .d3 .txt p,
+   .services .container .right-container .d4 .txt p{
+   font-size: 15px;
+   line-height: 20px;
+}
+.services .container .right-container .d2{
+   width: 45%;
+   padding-left: 20px;
+ }
+ 
+.services .container .right-container .d2 .logo{
+   background-color: #F3617B;
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left: 5px;
+}
+
+.services .container .right-container .d2 .logo img{
+   width: 50%;
+}
+.services .container .right-container .d2 .txt{
+padding-top: 10px;
+ font-family: "Roboto Condensed", sans-serif;
+ color: #36327D;
+}
+.services .container .right-container .d2 .txt h2{
+   font-size: 18px;
+   padding-bottom: 20px;
+}
+ .services .container .right-container .d3{
+   width: 45%;
+ }
+ .services .container .right-container .d3 .logo{
+   background-color: #FF561C;
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left: 5px;
+}
+
+.services .container .right-container .d3 .logo img{
+   width: 50%;
+}
+.services .container .right-container .d3 .txt{
+padding-top: 10px;
+ font-family: "Roboto Condensed", sans-serif;
+ color: #36327D;
+}
+.services .container .right-container .d3 .txt h2{
+   font-size: 18px;
+   padding-bottom: 20px;
+}
+ .services .container .right-container .d4{
+   width: 45%;
+   padding-left: 30px;
+ }
+ .services .container .right-container .d4 .logo{
+   background-color: #41B883;
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left: 5px;
+}
+
+.services .container .right-container .d4 .logo img{
+   width: 50%;
+}
+.services .container .right-container .d4 .txt{
+padding-top: 10px;
+ font-family: "Roboto Condensed", sans-serif;
+ color: #36327D;
+}
+.services .container .right-container .d4 .txt h2{
+   font-size: 17px;
+   padding-bottom: 20px;
+}
+
+
+
+
+
+
+/* TABLET DESIGN */
+  @media only screen and (max-width: 960px) {
+   header .head  #nav-overlay{
+     display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: #162330;
+     }
+     header .head  #nav-overlay ul{
+      background-color: white;
+      flex-direction: column;
+      width: 96%;
+      padding: 10px 0px 225px 10px;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 55px;
+      text-decoration: none;
+     }
+     header .head  #nav-overlay ul li a.active{
+      color: #FDC134;
+    }
+    header .head  #nav-overlay ul li a{
+      color: #213B52;
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+    }
+   header .head #nav-overlay ul li{
+     margin-right: 0px;
+     margin-bottom: 40px;
+     text-decoration: none;
+     list-style: none;
+   } 
+   header .head #nav-overlay #closeicon
+ {
+   color: white;
+   font-size: 37px;
+   position: absolute;
+   right: 22px;
+   top: 15px;
+   display: block;
+ }
+    header .head .logo{
+        width: 50%;
+     }
+     
+     header .nav{
+        display: none;
+     }
+     header .head .menu .bx{
+        display: flex;
+        font-size: 35px;
+        padding-right: 15px;
+     }
+
+     .hero{
+        margin-top: 20px;
+        background-image: linear-gradient(#F3F7FB, white);
+     }
+     .hero .container{
+        width: 95%;
+     }
+     .hero .container .txt{
+        top: 100px;
+     }
+     .hero2{
+      margin-top: 25px;
+      display: block;
+   }
+ 
+   .hero2 .container{
+      width: 95%;
+   }
+   .hero2 .container .txt11{
+      font-size: 40px;
+   }
+   .hero2 .container .row .row1 .txt .txt2 p{
+      font-size: 10px;
+   }
+   .hero2 .container .row .row1 .txt .txt1 h4{
+      font-size: 15px;
+      line-height: 10px;
+   }
+   .hero3 .container .c1 .m1 h1{
+      font-size: 25px;
+      line-height: 30px;
+   }
+   .hero3 .container .c1 .p p{
+      color: black;
+       font-size: 10px;
+   }
+   .hero3 .container .c1{
+      height: 220px;
+      padding: 20px;
+      /* background-color: red; */
+   }
+   .hero3 .container .c1 .h11 h1{
+      font-size: 28px;
+      line-height: 30px;
+      color: #020181;
+    }
+    .hero3 .container .c1 .txt h1 {
+      font-size: 17px;
+      line-height: 22px;
+    }
+    
+ .hero4 .container .div1{
+   width: 40%;
+ }
+ .hero4 .container .div1 h3{
+   font-size: 20px;
+ 
+}
+.hero4 .container{
+   width: 90%;
+   gap: 4%;
+}
+.hero4 .container{
+   gap: 2%;
+}
+
+.hero4 .container .div1 p{
+   padding-bottom: 20px;
+}
+.hero4 .container .div1 .btns{
+   width: 90%;
+}
+
+.hero4 .container .div1 .btns .btn2,
+.hero4 .container .div1 .btns .btn1{
+   padding: 10px 15px;
+   font-size: 13px;
+}
+.hero4 .container .div1 h2{
+   font-size: 35px;
+   text-align: center;
+}
+.hero4 .container .div1{
+   width: 45%;
+   text-align: justify;
+}
+.hero4 .container .div2{
+   width: 50%;
+}
+.hero4 .container .div2 .img1{
+   width: 70%;
+   background-position: left top;
+}
+.hero4 .container .div2 .img2{
+   width: 60%;
+   right: 0px;
+}
+.services{
+   display: none;
+}
+.hero5{
+   display: block;
+}
+
+.hero5 .container{
+   width: 95%;
+}
+.hero5 .container .main .div1{
+   width: 50%;
+}
+.hero5 .container .main .div1 .child1{
+   background-color: white;
+   width: 100%;
+   margin-bottom: 25px;
+}
+.hero5 .container .main .div2{
+ display: flex;
+ height: 390px;
+}
+.hero5 .container .main .div .child1{
+   padding: 20px 10px 90px 25px;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   /* height: 235px; */
+}
+.hero5 .container .main .div .child1 h2{
+   font-size: 18px;
+}
+.hero5 .container .main .div .child1 p{
+   font-size: 15px;
+}
+.hero5 .container .main .div3{
+   width: 50%;
+}
+.hero5 .container .head h1{
+   font-size: 25px;
+}
+  }
+
+  /* MOBILE SMALL VERSION */
+@media only screen and (max-width: 450px){
+ 
+   header{
+   height: 10vh;
+   }
+    header .head{
+       width: 100%;
+    }
+    header .head .logo{
+       width: 50%;
+    }
+    header .head .logo img{
+       width: 100%;
+    }
+    .hero{
+       
+        top: 70px;
+        padding-top: 10px;
+        background-color: #F3F7FB;
+     }
+     .hero .container{
+        width: 100%;
+        position: relative;
+     }
+     
+     .hero .container .img{
+        background-position-x: 15%;
+        border-radius: 0px;
+        height: 60vh;
+      
+     }
+     .hero .container .shadow{
+        background: linear-gradient(to right, black 5%, transparent 100%);
+        border-radius: 0px;
+        height: 60vh;
+        
+     }
+     .hero .container .txt{
+      display: none;
+     }
+     .hero .container .txt-mobile{
+      position: absolute;
+       top: 85px;
+       left: 15px;
+       color: white;
+       display: block;
+    }
+    .hero .container .txt-mobile h2{
+      font-family: "Poppins", sans-serif;
+      font-size: 40px;
+      line-height: 50px;
+   }
+   .hero .container .txt-mobile p {
+     padding-top: 7px;
+     font-family: "Poppins", ans-serif;
+     font-size: 13px;
+     font-style: italic;
+   }
+ 
+   .hero2{
+    display: none;
+      
+   }
+   .hero2a {
+      display: block;
+   }
+   .swiper{
+      display: block;
+      margin-top: 20px;
+     }
+.hero3 {
+   margin-top: 10px;
+   background-color: re;
+   background-image: linear-gradient(#F3F7FB, white);
+}
+   .hero3 .container{
+      width: 90%; 
+   }
+   .hero3 .container .c1{
+      width: 100%;
+      margin-bottom: 35px;
+   }
+  
+   .hero3 .container .c1 .m1 h1{
+      font-size: 35px;
+      line-height: 60px;
+   }
+   .hero3 .container .c1 .p p{
+      color: black;
+       font-size: 15px;
+   }
+   .hero3 .container .c1{
+      height: 220px;
+      padding: 22px;
+   }
+   .hero3 .container .c1 .h11 h1{
+      font-size: 30px;
+      line-height: 30px;
+      color: #020181;
+    }
+    .hero3 .container .c1 .txt h1 {
+      font-size: 17px;
+      line-height: 25px;
+    }
+    .hero3 .container .c11{
+      background-color: transparent;
+      box-shadow: none;
+      margin-bottom: 0px;
+   }
+   
+    .hero4 .container{
+      margin: auto;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .hero4 .container .div1{
+      width: 100%;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    .hero4 .container .div1 h3{
+      font-size: 20px;
+    }
+
+   .hero4 .container .div1 p{
+      padding-bottom: 20px;
+   }
+   .hero4 .container .div1 .btns{
+      width: 90%;
+   }
+   .hero4 .container .div1 .btns .btn2,
+   .hero4 .container .div1 .btns .btn1{
+      padding: 10px 15px;
+      font-size: 13px;
+   }
+   .hero4 .container .div1 h2{
+      font-size: 35px;
+      text-align: center;
+   }
+   .hero4 .container .div2{
+      width: 100%;
+   }
+   .hero4 .container .div2 .img1{
+      width: 100%;  
+   }
+   .hero4 .container .div2 .img2{
+      display: none;
+   }
+   
+   .hero5 .container{
+      width: 90%;
+   }
+   .hero5 .container .main{
+      flex-direction: column;
+   }
+   .hero5 .container .main .div1 .div{
+      width: 100%;
+   }
+   .hero5 .container .main .div1{
+      width: 100%;
+   }
+   .hero5 .container .main .div3{
+      width: 100%;
+   }
+   .hero5 .container .main .div2{
+      display: none;
+     }
+}
